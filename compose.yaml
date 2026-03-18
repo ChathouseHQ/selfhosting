@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
 
   app:
-    image: ghcr.io/ChathouseHQ/chathouse:latest
+    image: ghcr.io/chathousehq/chathouse:latest
     expose:
       - '3000'
     environment:
@@ -35,7 +35,7 @@ services:
     restart: unless-stopped
 
   worker:
-    image: ghcr.io/ChathouseHQ/chathouse:latest
+    image: ghcr.io/chathousehq/chathouse:latest
     command: ['node', 'apps/worker/dist/index.js']
     environment:
       - NODE_ENV=production
