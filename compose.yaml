@@ -25,6 +25,7 @@ services:
       - SMTP_PASSWORD=${SMTP_PASSWORD:-}
       - SMTP_FROM=${SMTP_FROM:-Chathouse <noreply@example.com>}
       - SMTP_MOCK=${SMTP_MOCK:-false}
+      - BRAVE_SEARCH_API_KEY=${BRAVE_SEARCH_API_KEY:-}
     volumes:
       - uploads_data:/app/data/uploads
     depends_on:
